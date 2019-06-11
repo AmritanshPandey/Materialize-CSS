@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+    <title>Materialize Javascript</title>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="container">
+        <!--Carousel Full Slider-->
+        <h1>CAROUSEL FULL SLIDER</h1>
+        <div class="carousel carousel-slider">
+            <a href="#one!" class="carousel-item">
+                <img src="http://lorempixel.com/800/600/nature/1" alt="">
+            </a>
+            <a href="#two!" class="carousel-item">
+                <img src="http://lorempixel.com/800/600/nature/2" alt="">
+            </a>
+            <a href="#three!" class="carousel-item">
+                <img src="http://lorempixel.com/800/600/nature/3" alt="">
+            </a>
+            <a href="#four!" class="carousel-item">
+                <img src="http://lorempixel.com/800/600/nature/4" alt="">
+            </a>
+            <a href="#five!" class="carousel-item">
+                <img src="http://lorempixel.com/800/600/nature/5" alt="">
+            </a>
+        </div>
+    </div>
+
+
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.carousel');
+            var instances = M.Carousel.init(elems, { fullWidth: true,  indicators: true });
+        });
+
+
+    </script>
+</body>
+
+</html>
